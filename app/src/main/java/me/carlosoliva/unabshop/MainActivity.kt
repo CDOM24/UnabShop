@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
                }
 
                composable ( route = "register" ) {
-                   RegisterScreen()
+                   RegisterScreen(navController = navController)
                }
 
                composable ( route = "home" ) {
