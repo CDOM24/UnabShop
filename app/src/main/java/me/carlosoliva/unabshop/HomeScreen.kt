@@ -10,6 +10,7 @@ import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.ShoppingCart
 import androidx.compose.material3.*
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -119,7 +120,12 @@ fun HomeScreen(viewModel: ProductViewModel = viewModel()) {
                 Text("Guardar", color = Color.White, fontWeight = FontWeight.Bold)
             }
 
-            Divider(modifier = Modifier.padding(vertical = 16.dp))
+            HorizontalDivider(
+                modifier = Modifier.padding(vertical = 16.dp),
+                thickness = DividerDefaults.Thickness,
+                color = DividerDefaults.color
+            )
+
 
 
             Text(
